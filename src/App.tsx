@@ -24,12 +24,14 @@ export function App() {
   return (
     <>
       <GlobalStyles />
+
+      <Header onOpenNewTransactionModal={handleOpenNewTransactionModal} />
+      <DashBoard />
+
       <NewTransactionalModal
         isOpen={isNewTransactionModalOpen}
         onRequestClose={handlecloseNewTransactionModal}
       />
-      <Header onOpenNewTransactionModal={handleOpenNewTransactionModal} />
-      <DashBoard />
     </>
   );
 }
