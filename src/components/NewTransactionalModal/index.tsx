@@ -67,6 +67,7 @@ export function NewTransactionalModal({
 
         <S.TransactionTypeContainer>
           <S.RadioBox
+            activeColor="green"
             onClick={() => {
               setType("deposit");
             }}
@@ -77,6 +78,7 @@ export function NewTransactionalModal({
             <span>Entrada</span>
           </S.RadioBox>
           <S.RadioBox
+            activeColor="red"
             isActive={type === "whitdraw"}
             onClick={() => {
               setType("whitdraw");
